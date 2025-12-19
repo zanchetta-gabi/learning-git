@@ -11,8 +11,11 @@ def divisao(x,y):
     return x/y
 
 def calculadora():
-    num1 = input("Insira o 1 numero: ")
-    num2 = input("Insira o 2 numero: ")
+    n1string = input("Insira o 1 numero: ")
+    n2string = input("Insira o 2 numero: ")
+
+    num1 = int(n1string)
+    num2 = int(n2string)
     
     prompt = "Insira a operacao desejada [soma, subtacao, multiplicacao, divisao]: "
     operacao = input(prompt)
@@ -31,3 +34,5 @@ def calculadora():
     
     print(f"tcharammm, seu resultado é: {resultado}")
 
+
+calculadora()
